@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>柱形图</title>
+    <!--引入echarts.js这个文件-->
+    <script src="../js/echarts.js"></script>
+</head>
+<body>
+    <!--定义画布-->
+    <div id="age_distribution" style="height: 400px;width: 600px"></div>
+    <script type="text/javascript">
+        // 进行echarts的初始化，以及定位到画布
+        var mychart = echarts.init(document.getElementById("age_distribution"))
+        // 配置项和配置数据
+        var option = {
+            // 标题
+            title:{
+                text:'同学群收入分布'
+            },
+            // 图例
+            legend:{
+                data:['legend']
+            },
+            // 横轴
+            xAxis:{
+                data:['张善波','万璐露','马家辉','袁熊','胡一笑','钱丽妮']
+            },
+            // 纵轴
+            yAxis:{},
+            // 数据
+            series:[
+                {
+                    name:'收入',
+                    // 柱形图
+                    type:'bar',
+                    data:[24000,13000,6000,7000,8000,5000]
+                }
+            ]
+        };
+        mychart.setOption(option)
+    </script>
+
+</body>
+</html>
