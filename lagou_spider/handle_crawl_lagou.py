@@ -54,7 +54,7 @@ class HandleLaGou(object):
         while True:
             #加入阿布云的动态代理
             # proxyinfo = "http://%s:%s@%s:%s" % ('H1V32R6470A7G90D', 'CD217C660A9143C3', 'http-dyn.abuyun.com', '9020')
-            # res = requests.get('https://northstar.changtu.com/ippool/adsl').json()
+            # res = requests.get('https://xxxx.com/ippool/adsl').json()
             # ip = res.get('data').get('ip')
             # port = res.get('data').get('port')
             # proxy = {
